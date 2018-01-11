@@ -11,6 +11,14 @@ code-number = highlight-aqua
 code-keyword = highlight-purple
 code-comment = highlight-comment
 code-argument = highlight-orange
+/* 类型 */
+code-type = #5bb3ff
+/* Marco */
+code-meta = #fde24e
+/* 系统内建 */
+code-built-in = code-type
+/*#66D9EF*/
+code-title = code-type
 
 $code-block
   background: code-bgc
@@ -81,14 +89,8 @@ $line-numbers
       font: normal normal normal 14px/1 FontAwesome
     a:hover
       color: #FFF
-  h1
-    font-size: 2.5em
-    margin-top: 30px
-    margin-bottom: 30px
-  h2
-    font-size: 2.2em
-    margin-top: 30px
-    margin-bottom: 30px
+
+  h1, h2, h3, h4, h5, h6
     font-weight: 300
     padding-bottom: 5px
     margin: .5em auto
@@ -96,12 +98,22 @@ $line-numbers
     color: #999
     padding-bottom: 5px
     text-align: center
-  h2::after,h2::before
+  h1::before, h2::before, h3::before, h4::before, h5::before, h6::before, h1::after, h2::after, h3::after, h4::after, h5::after, h6::after
     content: " —— "
+
+  h1
+    font-size: 2.5em
+    /*margin-top: 30px
+    margin-bottom: 30px*/
+  h2
+    font-size: 2.2em
+    /*margin-top: 30px
+    margin-bottom: 30px*/
+
   h3
     font-size: 1.9em
-    margin-top: 30px
-    margin-bottom: 30px
+    /*margin-top: 30px
+    margin-bottom: 30px*/
     /*margin: 0.5em auto
     color: #fff
     background: rgba(0, 0, 0, 0.27)
@@ -113,8 +125,8 @@ $line-numbers
     content: " > "*/
   h4
     font-size: 1.6em
-    margin-top: 30px
-    margin-bottom: 30px
+    /*margin-top: 30px
+    margin-bottom: 30px*/
     /*margin: 0.5em auto
     color: #fff*/
     /*background: #5A5A5A*/
@@ -125,8 +137,8 @@ $line-numbers
     border-radius: 6px*/
   h5
     font-size: 1.3em
-    margin-top: 30px
-    margin-bottom: 30px
+    /*margin-top: 30px
+    margin-bottom: 30px*/
     /*margin: 0.5em auto
     color: #fff
     background: #8E8D8D
@@ -137,8 +149,8 @@ $line-numbers
     border-radius: 6px*/
   h6
     font-size: 1.1em
-    margin-top: 30px
-    margin-bottom: 30px
+    /*margin-top: 30px
+    margin-bottom: 30px*/
     /*margin: 0.5em auto
     color: #fff
     border: 1px dashed #020202
@@ -260,7 +272,7 @@ pre
   .tag
     color: #839496
   .title
-    color: #66D9EF
+    color: code-title
   .string
     color: #2aa198
   .attribute
@@ -273,10 +285,13 @@ pre
     color: code-comment
   .keyword
     color: code-keyword
+  .type
+    color: code-type
   .function
   .class .params
     color: #66D9EF
   .params
+   color: code-word
   .function
   .css .value
     color: code-argument
@@ -285,6 +300,7 @@ pre
   .preprocessor
     color: code-tag
   .built_in
+    color: code-built-in
   .class
   .css ~ * .class
   .function
@@ -300,3 +316,5 @@ pre
   .operator
   .link_url
     color: color-link
+  .meta
+    color: code-meta
