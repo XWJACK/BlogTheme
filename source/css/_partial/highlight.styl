@@ -8,17 +8,17 @@ code-attr = highlight-blue
 code-word = highlight-foreground
 code-value = highlight-green
 code-number = highlight-aqua
-code-keyword = highlight-purple
+code-keyword = #d138ff
 code-comment = highlight-comment
 code-argument = highlight-orange
 /* 类型 */
-code-type = #5bb3ff
+code-type = #4cf4ff
 /* Marco */
 code-meta = #fde24e
 /* 系统内建 */
-code-built-in = code-type
+code-built-in = #4cf4ff
 /*#66D9EF*/
-code-title = code-type
+code-title = #4cf4ff
 
 $code-block
   background: code-bgc
@@ -69,7 +69,7 @@ $line-numbers
       border-radius: 5px
       font-family: Consolas,"Courier New",Courier
       text-shadow: none
-      background-color: color-inline-background
+      background-color: #3f3f3f
       word-wrap: break-word
       white-space: pre
     a
@@ -95,11 +95,11 @@ $line-numbers
     padding-bottom: 5px
     margin: .5em auto
     font-weight: 700
-    color: #999
+    color: #f55555
     padding-bottom: 5px
     text-align: center
-  h1::before, h2::before, h3::before, h4::before, h5::before, h6::before, h1::after, h2::after, h3::after, h4::after, h5::after, h6::after
-    content: " —— "
+  /* h1::before, h2::before, h3::before, h4::before, h5::before, h6::before, h1::after, h2::after, h3::after, h4::after, h5::after, h6::after
+    content: " —— " */
 
   h1
     font-size: 2.5em
