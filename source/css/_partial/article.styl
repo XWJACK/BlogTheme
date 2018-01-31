@@ -151,7 +151,7 @@
     padding: 1px 3px;
     margin: 0 3px;
 	color: color-inline
-    background: #000000;
+    background: color-inline-background;
     /* color-inline-background; */
     /* border: 1px dashed color-inline-border-color; */
 	border-radius: 3px;
@@ -170,6 +170,7 @@
   }
   ul{
     li:before{
+      content: "❤︎";
     }
   }
   ul,ol{
@@ -459,7 +460,7 @@ width: 85%;
         }
     }
     &:hover p .copy-path::after {
-        content: "复制";
+        content: "Copy";
     }
     .post-url:hover {
         font-weight: normal;
