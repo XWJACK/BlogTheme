@@ -97,13 +97,13 @@ $line-numbers
     font-weight: 700
     color: #f55555
     padding-bottom: 5px
+    text-align: center
 
   h1
     font-size: 2.5em
-    text-align: center
     /*margin-top: 30px
     margin-bottom: 30px*/
-  h1::before
+  h1:before
     content: "❤︎ "
   h1:after
     content: " ❤︎"
@@ -112,24 +112,17 @@ $line-numbers
     font-size: 2.2em
     /*margin-top: 30px
     margin-bottom: 30px*/
-  h2::before
-    content: "❤︎ "
+  h2:before
+    content: "❤︎❤︎ "
+  h2:after
+    content: " ❤︎❤︎"
 
   h3
     font-size: 1.9em
-    /*margin-top: 30px
-    margin-bottom: 30px*/
-    /*margin: 0.5em auto
-    color: #fff
-    background: rgba(0, 0, 0, 0.27)
-    border: 1px #020202
-    padding: 0.2em 0.6em
-    font-weight: normal
-    border-radius: 6px
-  h3:hover
-    content: " > "*/
-  h3::before
-    content: "❤︎❤︎ "
+  h3:before
+    content: "❤︎❤︎❤︎ "
+  h3:after
+    content: " ❤︎❤︎❤︎"
 
   h4
     font-size: 1.6em
@@ -143,8 +136,10 @@ $line-numbers
     font-weight: normal
     -webkit-border-radius: 6px
     border-radius: 6px*/
-  h4::before
-    content: "❤︎❤︎❤︎ "
+  h4:before
+    content: "❤︎❤︎❤︎❤︎ "
+  h4:after
+    content: " ❤︎❤︎❤︎❤︎"
 
   h5
     font-size: 1.3em
@@ -158,8 +153,10 @@ $line-numbers
     font-weight: normal
     -webkit-border-radius: 6px
     border-radius: 6px*/
-  h5::before
-    content: "❤︎❤︎❤︎❤︎ "
+  h5:before
+    content: "❤︎❤︎❤︎❤︎❤︎ "
+  h5:after
+    content: " ❤︎❤︎❤︎❤︎❤︎"
 
   h6
     font-size: 1.1em
@@ -172,8 +169,10 @@ $line-numbers
     font-weight: normal
     -webkit-border-radius: 6px
     border-radius: 6px*/
-  h6::before
-    content: "❤︎❤︎❤︎❤︎❤︎ "
+  h6:before
+    content: "❤︎❤︎❤︎❤︎❤︎❤︎ "
+  h6:after
+    content: " ❤︎❤︎❤︎❤︎❤︎❤︎"
 
   hr
     background-color: #2f2f2f
